@@ -1,0 +1,7 @@
+# file name to write a report
+filename: "test-write-file.log"
+
+# mongodb credential
+mongodb:
+  user: "test"
+  pass: "test"
