@@ -28,8 +28,11 @@ func ReadConf() *viper.Viper {
 	v.SetDefault("filename", "untitled")
 
 	// credential to mongodb
+	v.SetDefault("mongodb.host", "localhost")
+	v.SetDefault("mongodb.port", "27017")
 	v.SetDefault("mongodb.user", "user")
-	v.SetDefault("mongodb.pass", "pass")
+	v.SetDefault("mongodb.password", "pass")
+	v.SetDefault("mongodb.collection", "evhousekeeper")
 
 	v.SetConfigName(confFile)
 	v.SetConfigType("yaml")

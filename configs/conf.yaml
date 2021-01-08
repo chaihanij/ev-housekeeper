@@ -3,5 +3,9 @@ filename: "test-write-file.log"
 
 # mongodb credential
 mongodb:
-  user: "test"
-  pass: "test"
+  host: localhost
+  port: 27017
+  user: test
+  password: test
+  database: evhousekeeper
+  collection: evhousekeeper
